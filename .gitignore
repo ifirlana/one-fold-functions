@@ -1,4 +1,9 @@
 node_modules/
-firebase.json
 functions/node_modules/
-package.json
+functions/env.json
+.DS_Store
+jsLibraryMappings.xml
+misc.xml
+modules.xml
+one-fold.iml
+.idea

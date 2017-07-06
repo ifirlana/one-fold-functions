@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/ifirlana/one-fold-functions/issues"
   },
-  "homepage": "https://github.com/ifirlana/one-fold-functions#readme"
+  "homepage": "https://github.com/ifirlana/one-fold-functions#readme",
+  "dependencies": {}
 }
