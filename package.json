@@ -1,0 +1,19 @@
+{
+  "name": "one-fold-functions",
+  "version": "1.0.0",
+  "description": "create functions for processing api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifirlana/one-fold-functions.git"
+  },
+  "author": "ifirlana@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifirlana/one-fold-functions/issues"
+  },
+  "homepage": "https://github.com/ifirlana/one-fold-functions#readme"
+}
