@@ -7,6 +7,11 @@ const cors = require("cors");
 var env = require('../env.json');
 
 module.exports = {
+    database: function (me, obj) {
+        if (me === "registered" && obj.hasOwnProperty("uid")) {
+            return admin.database().ref("registered").child(obj.uid);
+        }
+    },
     // init function firebase
     init: function () {
         // admin.initializeApp({
@@ -18,6 +23,7 @@ module.exports = {
             databaseURL: env.databaseURL
         });
     },
+    // validate token firebase
     validateFirebaseToken: function(req, res, next) {
         cors(req, res, function () {
             console.log("PASS CORS");

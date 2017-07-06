@@ -1,4 +1,5 @@
 var fireCls = require("./component/firebaseClass");
+var regCls = require("./component/registerClass");
 var functions = require('firebase-functions');
 
 // // Create and Deploy Your First Cloud Functions
@@ -12,7 +13,12 @@ exports.helloWorld = functions.https.onRequest(function (request, response) {
 
 // register uid into database.
 exports.registeredAccount = functions.https.onRequest(function (request, response) {
-    // fireCls.validateFirebaseToken(request, response, function () {
-        response.send("Hello");
-    // })
+    fireCls.validateFirebaseToken(request, response, function (decodedToken) {
+        response.send(decodedToken);
+    });
+    // var uid = request.body.uid;
+    // var email = request.body.email;
+    // regCls.init(uid, email, function () {
+    //     response.send("Hello");
+    // });
 });
