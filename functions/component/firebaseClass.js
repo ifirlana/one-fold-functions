@@ -30,6 +30,7 @@ module.exports = {
             try {
                 const idToken = req.headers.authorization.split("Bearer ")[1];
                 if (idToken) {
+                    console.log("idToken :", idToken);
                     admin.auth()
                         .verifyIdToken(idToken)
                         .then(function (decodedToken) {
